@@ -1403,13 +1403,6 @@ private: System::Void comboBox4_SelectedIndexChanged(System::Object^  sender, Sy
 				K1 = 0.08;
 				K2 = 0.235;
 			 }
-			 /*if (this->comboBox4->Text=="")
-			 {
-				 if (u == 2) 
-				 {
-
-				 }
-			 }*/
 		 }
 private: System::Void comboBox6_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 			if (this->comboBox6->Text=="Открыто на местности")
