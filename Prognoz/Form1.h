@@ -328,7 +328,6 @@ private:
 			this->kolSDAV->Size = System::Drawing::Size(210, 20);
 			this->kolSDAV->TabIndex = 5;
 			this->kolSDAV->Visible = false;
-			this->kolSDAV->TextChanged += gcnew System::EventHandler(this, &Form1::kolSDAV_TextChanged);
 			// 
 			// label3
 			// 
@@ -360,7 +359,6 @@ private:
 			this->visotapod->Name = L"visotapod";
 			this->visotapod->Size = System::Drawing::Size(158, 20);
 			this->visotapod->TabIndex = 9;
-			this->visotapod->TextChanged += gcnew System::EventHandler(this, &Form1::visotapod_TextChanged);
 			// 
 			// tempair
 			// 
@@ -368,7 +366,6 @@ private:
 			this->tempair->Name = L"tempair";
 			this->tempair->Size = System::Drawing::Size(104, 20);
 			this->tempair->TabIndex = 11;
-			this->tempair->TextChanged += gcnew System::EventHandler(this, &Form1::tempair_TextChanged);
 			// 
 			// label6
 			// 
@@ -387,7 +384,6 @@ private:
 			this->skorvetr->Name = L"skorvetr";
 			this->skorvetr->Size = System::Drawing::Size(175, 20);
 			this->skorvetr->TabIndex = 13;
-			this->skorvetr->TextChanged += gcnew System::EventHandler(this, &Form1::skorvetr_TextChanged);
 			// 
 			// comboBox1
 			// 
@@ -480,7 +476,6 @@ private:
 			this->plotnas->Name = L"plotnas";
 			this->plotnas->Size = System::Drawing::Size(133, 20);
 			this->plotnas->TabIndex = 26;
-			this->plotnas->TextChanged += gcnew System::EventHandler(this, &Form1::plotnas_TextChanged);
 			// 
 			// label11
 			// 
@@ -532,7 +527,6 @@ private:
 			this->obSDAV->Size = System::Drawing::Size(210, 20);
 			this->obSDAV->TabIndex = 34;
 			this->obSDAV->Visible = false;
-			this->obSDAV->TextChanged += gcnew System::EventHandler(this, &Form1::obSDAV_TextChanged);
 			// 
 			// dav
 			// 
@@ -541,7 +535,6 @@ private:
 			this->dav->Size = System::Drawing::Size(210, 20);
 			this->dav->TabIndex = 35;
 			this->dav->Visible = false;
-			this->dav->TextChanged += gcnew System::EventHandler(this, &Form1::dav_TextChanged);
 			// 
 			// label15
 			// 
@@ -574,7 +567,6 @@ private:
 			this->tempdo->Size = System::Drawing::Size(57, 20);
 			this->tempdo->TabIndex = 38;
 			this->tempdo->Visible = false;
-			this->tempdo->TextChanged += gcnew System::EventHandler(this, &Form1::tempdo_TextChanged);
 			// 
 			// label17
 			// 
@@ -607,7 +599,6 @@ private:
 			this->tempposle->Size = System::Drawing::Size(57, 20);
 			this->tempposle->TabIndex = 41;
 			this->tempposle->Visible = false;
-			this->tempposle->TextChanged += gcnew System::EventHandler(this, &Form1::tempposle_TextChanged);
 			// 
 			// comboBox6
 			// 
@@ -646,7 +637,6 @@ private:
 			this->vremposle->Name = L"vremposle";
 			this->vremposle->Size = System::Drawing::Size(152, 20);
 			this->vremposle->TabIndex = 46;
-			this->vremposle->TextChanged += gcnew System::EventHandler(this, &Form1::vremposle_TextChanged);
 			// 
 			// label4
 			// 
@@ -709,7 +699,6 @@ private:
 			this->udalobj->Name = L"udalobj";
 			this->udalobj->Size = System::Drawing::Size(186, 20);
 			this->udalobj->TabIndex = 52;
-			this->udalobj->TextChanged += gcnew System::EventHandler(this, &Form1::udalobj_TextChanged);
 			// 
 			// label24
 			// 
@@ -1059,6 +1048,7 @@ public: System::Void comboBox1_SelectedIndexChanged(System::Object^  sender, Sys
 			}
 			if (comboBox1->Text=="Сероуглерод"){                 ////////////////////
 				d = 1.263;
+				/*paramVesh (76.14,46.2,135,297,127,760,1,1,1,1);*/
 				M = 76.14;
 				tk = 46.2;
 				Dpor = 135;
@@ -1236,47 +1226,12 @@ public: System::Void comboBox1_SelectedIndexChanged(System::Object^  sender, Sys
 			this->dav->Visible = true;
 			}
 		 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////		
-private: System::Void kolSDAV_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 Q = Convert::ToDouble(this->kolSDAV->Text);
-		 }
 private: System::Void comboBox2_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 			 if (this->comboBox2->Text=="Свободно")
 			{this->groupBox1->Visible = false;}
 			 if (this->comboBox2->Text=="В поддон")
 			{this->groupBox1->Visible = true;}
 		 }
-private: System::Void skorvetr_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 u = Convert::ToDouble(this->skorvetr->Text);
-		 }
-private: System::Void tempair_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 t = Convert::ToDouble(this->tempair->Text);
-		 }
-private: System::Void visotapod_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 H = Convert::ToDouble(this->visotapod->Text);
-		 }
-private: System::Void dav_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 P = Convert::ToDouble(this->dav->Text);
-		 }
-private: System::Void obSDAV_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 V = Convert::ToDouble(this->obSDAV->Text);
-		 }
-private: System::Void plotnas_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 A = Convert::ToDouble(this->plotnas->Text);
-		 }
-private: System::Void tempdo_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 to = Convert::ToDouble(this->tempdo->Text);
-		 }
-private: System::Void tempposle_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 ti = Convert::ToDouble(this->tempposle->Text);
-		 }		
-private: System::Void vremposle_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 N = Convert::ToDouble(this->vremposle->Text);
-		 }
-private: System::Void udalobj_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-			 R = Convert::ToDouble(this->udalobj->Text);
-		 }
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 public: System::Void comboBox3_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 			 //
 			 //Присвоение плотности по агрегатному состоянию
@@ -1464,13 +1419,20 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 		 //
 		 //Выбор формулы для подсчета кол-ва СДЯВ в облаке
 		 //
+			 t = Convert::ToDouble(this->tempair->Text);
 			if (this->comboBox3->Text=="Газ")
 			{
-			 Q1 = P * d * V;
-			 Q2 = Q - Q1;
+				//в объеме нужно изменить кол-во вещества на параметр объема
+				V = Convert::ToDouble(this->obSDAV->Text);
+				P = Convert::ToDouble(this->dav->Text);
+				Q1 = P * d * V;
+				Q2 = Q - Q1;
 			}	
 			else
 			 {
+				 to = Convert::ToDouble(this->tempdo->Text);
+				 ti = Convert::ToDouble(this->tempposle->Text);
+				 Q = Convert::ToDouble(this->kolSDAV->Text);
 				 tn = ti - to;
 				 Q1 = (Q * Cp * tn) / Hisp;
 				 Q2 = Q - Q1;
@@ -1485,6 +1447,7 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 			 //
 			 if (this->comboBox2->Text=="В поддон")
 			 {
+				 H = Convert::ToDouble(this->visotapod->Text);
 				 Sp = Q2 / (H - 0.02) * d;
 			 }
 			 else
@@ -1494,6 +1457,7 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 			 //
 			 //Скорость испарения разлившегося СДЯВ
 			 //
+			 u = Convert::ToDouble(this->skorvetr->Text);
 			 W = 0.000001 * Sp * P * sqrt(M) * (5.38 + 2.7 * u);
 			 //
 			 //Время полного испарения СДЯВ
@@ -1512,6 +1476,7 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 			 //
 			 //Глубина зоны поражения вторичным облаком
 			 //
+			 N = Convert::ToDouble(this->vremposle->Text);
 			 if ((N < Tisp) && (Tisp <= 4)) {n = pow(N, 0.8);}
 			 else {n = pow(Tisp, 0.8);}
 
@@ -1535,6 +1500,7 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 			 //
 			 //Площади территории, подвергшейся заражению СДЯВ в городе и загородной зоне
 			 //
+			 R = Convert::ToDouble(this->udalobj->Text);
 			 /////////Первичным облаком//////////////////////////////////////////////
 			 Sig1 = (2 * R - Gm) / Gm;
 			 //Sig2 = Gm * R - pow(R, 2.0);
@@ -1550,6 +1516,7 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 			 //
 			 //Число пораженных первичным и вторичным облаками
 			 //
+			 A = Convert::ToDouble(this->plotnas->Text);
 			 Li = A * SOi;
 			 Lii = A * SOii;
 			 if ((i == 0) || (i == 1)) {
@@ -1569,7 +1536,6 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 			 //
 			 Form2 ^form2 = gcnew Form2();
 			 form2->Show();
-			 //this->Hide();
 		 }
 };
 }
