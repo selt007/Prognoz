@@ -1,4 +1,4 @@
-﻿Build started 5/25/2017 12:00:15 AM.
+﻿Build started 5/27/2017 2:37:29 AM.
      1>Project "C:\Users\Visual\Documents\Visual Studio 2010\Projects\Prognozirovanie\Prognoz\Prognoz\Prognoz.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Prognoz.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -28,4 +28,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.13
+Time Elapsed 00:00:09.05

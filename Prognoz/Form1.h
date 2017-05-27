@@ -1422,11 +1422,10 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 			 t = Convert::ToDouble(this->tempair->Text);
 			if (this->comboBox3->Text=="Газ")
 			{
-				//в объеме нужно изменить кол-во вещества на параметр объема
 				V = Convert::ToDouble(this->obSDAV->Text);
 				P = Convert::ToDouble(this->dav->Text);
 				Q1 = P * d * V;
-				Q2 = Q - Q1;
+				Q2 = V - Q1;
 			}	
 			else
 			 {
@@ -1440,7 +1439,7 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 			 if (this->comboBox1->Text=="Соляная кислота")
 			 {
 				Q1 = P * d * V;
-				Q2 = Q - Q1;
+				Q2 = V - Q1;
 			 }
 			 //
 			 //Площадь разлива СДЯВ
