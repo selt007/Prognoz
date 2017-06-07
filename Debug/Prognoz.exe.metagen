@@ -1,0 +1,48 @@
+  Prognoz.Form1.resources - Embedded, ContainedInManifestFile, 
+  Prognoz.Form2.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Prognoz, Version=1.0.*, Culture=Инвариантный язык (Инвариантная страна): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Prognoz.Form2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Prognoz.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Button button1 : Public
+    System.Windows.Forms.Button button2 : Public
+    System.Windows.Forms.TextBox kolSDAV : Public
+    System.Windows.Forms.TextBox visotapod : Public
+    System.Windows.Forms.TextBox tempair : Public
+    System.Windows.Forms.TextBox skorvetr : Public
+    System.Windows.Forms.ComboBox comboBox1 : Public
+    System.Windows.Forms.ComboBox comboBox2 : Public
+    System.Windows.Forms.GroupBox groupBox1 : Public
+    System.Windows.Forms.ComboBox comboBox3 : Public
+    System.Windows.Forms.GroupBox sost : Public
+    System.Windows.Forms.TextBox plotnas : Public
+    System.Windows.Forms.ComboBox comboBox4 : Public
+    System.Windows.Forms.TextBox obSDAV : Public
+    System.Windows.Forms.TextBox dav : Public
+    System.Windows.Forms.TextBox tempdo : Public
+    System.Windows.Forms.TextBox tempposle : Public
+    System.Windows.Forms.ComboBox comboBox6 : Public
+    System.Windows.Forms.TextBox vremposle : Public
+    System.Windows.Forms.TextBox udalobj : Public
+  Methods:
+    comboBox1_SelectedIndexChanged(Object, EventArgs): PrivateScope, Public, HideBySig
+    comboBox3_SelectedIndexChanged(Object, EventArgs): PrivateScope, Public, HideBySig
+    button2_Click(Object, EventArgs): PrivateScope, Public, HideBySig

@@ -1531,10 +1531,15 @@ public: System::Void button2_Click(System::Object^  sender, System::EventArgs^  
 			 //
 			 nm = ni + nii;
 			 //
-			 //Вывод второй формы на экран с найдеными переменными
+			 //Вывод ошибки или второй формы на экран с найдеными переменными
 			 //
+			 /*if (comboBox1->Text=="") {
+				 MessageBox::Show("11111111");
+			 }
+			 else {*/
 			 Form2 ^form2 = gcnew Form2();
 			 form2->Show();
+			 //}
 		 }
 };
 }
